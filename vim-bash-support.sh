@@ -1,12 +1,12 @@
 #!/bin/bash
 #===============================================================================
 #
-#          FILE:  bash-support.sh
+#          FILE:  vim-bash-support.sh
 # 
-#         USAGE:  ./bash-support.sh 
+#         USAGE:  ./vim-bash-support.sh 
 # 
 #   DESCRIPTION: Install wget, unzip, vim and Bash Support Plugin 
-#   See http://www.thegeekstuff.com/2009/02/make-vim-as-your-bash-ide-using-bash-support-plugin/
+#   See http://www.thegeekstuff.com/2009/02/make-vim-as-your-bash-ide-using-vim-bash-support-plugin/
 #       OPTIONS:  ---
 #  REQUIREMENTS:  ---
 #          BUGS:  ---
@@ -23,35 +23,22 @@
 #    \sfu function
 #    \se echo ­e "\n"
 #    \sp printf "\n"
-#        AUTHOR:  MattCoffey (), 
+#        AUTHOR:  Matt Coffey (), 
 #       COMPANY:  
 #       VERSION:  1.0
 #       CREATED:  08/14/2013 10:02:50 PM UTC
 #      REVISION:  ---
 #===============================================================================
 
-#Install vim, wget and unzip
-yum install vim <<EOF
-yes
-EOF
-yum install wget <<EOF
-yes
-EOF
-yum install unzip <<EOF
-yes
-EOF
-
 #Download plugin and unzip into .vim directory
-cd /usr/src
-wget -O bash-support.zip http://www.vim.org/scripts/download_script.php?src_id=9890
 mkdir ~/.vim 
-cd ~/.vim
-unzip /usr/src/bash-support.zip
+wget http://www.vim.org/scripts/download_script.php?src_id=9890 -O - >> /tmp/bash-support.zip
+unzip /tmp/bash-support.zip -d ~/.vim
 
 #Set up ~/.vimrc
 echo '" Bash support plugin'  >> ~/.vimrc
 echo "filetype plugin on" >> ~/.vimrc
-echo "let g:BASH_AuthorName   = 'MattCoffey'" >> ~/.vimrc
+echo "let g:BASH_AuthorName   = 'Matt Coffey'" >> ~/.vimrc
 echo "let g:BASH_Email        = ''" >> ~/.vimrc
 echo "let g:BASH_Company      = ''" >> ~/.vimrc
 echo ""  >> ~/.vimrc
