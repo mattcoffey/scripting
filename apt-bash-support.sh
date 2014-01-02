@@ -42,4 +42,4 @@ yes
 EOF
 
 #Run the generic bash-support.sh
-bash bash-support.sh
+bash vim-bash-support.sh
