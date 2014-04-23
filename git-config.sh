@@ -25,10 +25,12 @@ echo '    name = Matt Coffey' >> ~/.gitconfig
 echo '    email = ' >> ~/.gitconfig
 echo '[alias]' >> ~/.gitconfig
 echo '    lol = log --graph --decorate --pretty=oneline --abbrev-commit' >> ~/.gitconfig
-echo '    dc = diff --cached[credential]' >> ~/.gitconfig
+echo '    dc = diff --cached' >> ~/.gitconfig
+echo '[credential]' >> ~/.gitconfig
 echo '    helper = cache --timeout=' >> ~/.gitconfig
 echo '[core]' >> ~/.gitconfig
 echo '    editor = vim' >> ~/.gitconfig
+echo '    page = less' >> ~/.gitconfig
 echo '[push]' >> ~/.gitconfig
 echo '    default = simple' >> ~/.gitconfig
 echo '[color]' >> ~/.gitconfig
@@ -38,10 +40,10 @@ echo '    current = yellow reverse' >> ~/.gitconfig
 echo '    local = yellow' >> ~/.gitconfig
 echo '    remote = green' >> ~/.gitconfig
 echo '[color "diff"]' >> ~/.gitconfig
-echo '    meta = yellow bold' >> ~/.gitconfig
-echo '    frag = magenta bold' >> ~/.gitconfig
-echo '    old = red bold' >> ~/.gitconfig
-echo '    new = green bold' >> ~/.gitconfig
+echo '    meta = yellow' >> ~/.gitconfig
+echo '    frag = magenta' >> ~/.gitconfig
+echo '    old = red' >> ~/.gitconfig
+echo '    new = green' >> ~/.gitconfig
 echo '[color "status"]' >> ~/.gitconfig
 echo '    added = yellow' >> ~/.gitconfig
 echo '    changed = green' >> ~/.gitconfig
