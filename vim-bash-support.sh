@@ -5,7 +5,7 @@
 # 
 #         USAGE:  ./vim-bash-support.sh 
 # 
-#   DESCRIPTION: Install wget, unzip, vim and Bash Support Plugin 
+#   DESCRIPTION: Install Bash Support Plugin 
 #   See http://www.thegeekstuff.com/2009/02/make-vim-as-your-bash-ide-using-vim-bash-support-plugin/
 #       OPTIONS:  ---
 #  REQUIREMENTS:  ---
