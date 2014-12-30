@@ -66,11 +66,11 @@ echo "do shell script \"$BASH_PATH > /dev/null 2>&1 &\"" > "$APPLE_PATH"
 
 # Provide instructions for Save As
 
-echo "Hold File -> (Hold ALT) Save As"
+echo "Select File -> (Hold ALT) Save As"
+echo "File Format Application"
 echo "uncheck Show startup screen"
 echo "uncheck Stay open after run handler"
-echo "File Format Application"
-echo "Save As /Applications/[workspace].app"
+echo "Save As /Applications/$WORKSPACE.app"
 echo "Click Save"
 echo "To run from Alfred type $WORKSPACE"
 
