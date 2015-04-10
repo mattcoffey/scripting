@@ -50,7 +50,7 @@ BASH_PATH="$BASE_PATH/s/$WORKSPACE.sh"
 APPLE_PATH="$BASE_PATH/s/$WORKSPACE.scpt"
 
 echo "#!/bin/bash" > "$BASH_PATH"
-echo "/Applications/eclipse/Eclipse.app/Contents/MacOS/eclipse -showlocation -data $WORKSPACE_PATH -vmargs -Xms2048m -Xmx4096m -XX:MaxPermSize=2048M" >> "$BASH_PATH"
+echo "/opt/eclipse/Eclipse.app/Contents/MacOS/eclipse -showlocation -data $WORKSPACE_PATH -vmargs -Xms2048m -Xmx4096m -XX:MaxPermSize=2048M &" >> "$BASH_PATH"
 
 chmod +x "$BASH_PATH"
 
