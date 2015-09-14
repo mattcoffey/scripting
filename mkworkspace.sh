@@ -76,4 +76,4 @@ echo "To run from Alfred type $WORKSPACE"
 
 # Open AppleScript Editor
 
-open /Applications/Utilities/AppleScript\ Editor.app "$APPLE_PATH"
+open /Applications/Utilities/Script\ Editor.app "$APPLE_PATH"
